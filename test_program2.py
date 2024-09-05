@@ -5,4 +5,5 @@ def test_LargerThanN(capfd):
     n = 6
     program_2.display_larger_than_n_list(n, testNumberList)
     out, err = capfd.readouterr()
+    
     assert "10" in out
